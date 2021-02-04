@@ -6,6 +6,6 @@ public class AboutMeZabalawi {
         System.out.println("I hope to better my proficiency in Java.");
         System.out.println("My favourite piece of technology would be the the MOP-IT satellite.");
         System.out.println("My favourite app to use is VS Code");
-        System.out.println("I speedrun an IKEA furniture.");
+        System.out.println("I speedrun a IKEA furniture.");
     }
 }
