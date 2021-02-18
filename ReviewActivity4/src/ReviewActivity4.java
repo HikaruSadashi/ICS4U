@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class ReviewActivity4 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         DataInputStream input = new DataInputStream(System.in);
 
         // assigning variables
