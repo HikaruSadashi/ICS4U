@@ -17,7 +17,7 @@ public class ReviewActivity1 {
         //printing the variables alongside string desciption
         System.out.println("Name: " + name);
         System.out.println("A funfact about them is: " + funfact);
-        System.out.println("Age:  " + age);
+        System.out.println("Age:  " + age + "year(s)");
         System.out.println("Height: " + height + "ft");
         System.out.println("They are friendly with pets: " + petfriendly);
 
