@@ -55,10 +55,10 @@ public class ReviewActivity3 {
 
         //printing results
         System.out.println();
-        System.out.println("The unit cost is $" + unitCost);
-        System.out.println("The quantity is " + unitQuantity);
-        System.out.println("The total cost is " + totalCost);
-        System.out.println("The amount of money you have to pay in sales tax is " + SALESTAX*totalCost );
-        System.out.println("Your grand total is " + grandTotal + "$");
+        System.out.println("The unit cost is                                    " + "$" + unitCost);
+        System.out.println("The quantity is                                     " + unitQuantity);
+        System.out.println("The total cost is                                   " + "$" + totalCost);
+        System.out.println("The amount of money you have to pay in sales tax is " + "$" + SALESTAX*totalCost);
+        System.out.println("Your grand total is                                 " + "$" + grandTotal);
     }
 }
