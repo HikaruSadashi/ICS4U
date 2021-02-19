@@ -23,7 +23,7 @@ public class ReviewActivity3 {
         
         //bullet proodfing itemchoice input
         while (itemChoice != 1 && itemChoice != 2 && itemChoice != 3) {
-            System.out.print("invalid input, please re-enter your item choice: ");
+            System.out.print("invalid input, please re-enter your item choice:                ");
             itemChoice = Integer.parseInt(input.readLine());
         }
 
@@ -39,12 +39,12 @@ public class ReviewActivity3 {
         }
 
         //prompting user for quantity
-        System.out.print("How much of the item do you want? ");
+        System.out.print("How much of the item do you want?                               ");
         unitQuantity = Integer.parseInt(input.readLine());
 
         //bullet proofing quantity input
         while (unitQuantity <= 0 ) {
-            System.out.print("invalid input, please re-enter item quantity: ");
+            System.out.print("invalid input, please re-enter item quantity:                   ");
             unitQuantity = Integer.parseInt(input.readLine());
         }
         System.out.println("___________________________________________________________________________________");
