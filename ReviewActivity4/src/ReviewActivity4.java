@@ -27,11 +27,12 @@ public class ReviewActivity4 {
         }
 
         taxPaid = taxRate * grossEarnings;
-
+        
+        //align prints, *Check left-align
         System.out.println();
         System.out.println("Your tax rate is                             " + (taxRate * 100) + "%");
-        System.out.println("The dollar amount of tax you will pay is: " + "$" + taxPaid);
-        System.out.println("Your earnings after paying tax are:      " + "$" + (grossEarnings - taxPaid));
+        System.out.println("The dollar amount of tax you will pay is:    " + "$" + taxPaid);
+        System.out.println("Your earnings after paying tax are:          " + "$" + (grossEarnings - taxPaid));
 
     }
 }
