@@ -18,12 +18,12 @@ public class ReviewActivity5 {
         }
 
         // generate a random integer between 1 and 6
-        int random_int = (int)(Math.random() * (6 - 1 + 1) + 1);
+        int random_int = (int)(Math.random() *6 + 1);
         
         // bullet proofing 
         while (random_int != userGuess) {
             count = count + 1;
-            random_int = (int)(Math.random() * (6 - 1 + 1) + 1);
+            random_int = (int)(Math.random() *6 + 1);
             //The count++ acts weirdly for me
         }
         System.out.println();
