@@ -1,5 +1,4 @@
 import java.io.*;
-
 public class ReviewActivity5 {
     public static void main(String[] args) throws IOException {
         DataInputStream input = new DataInputStream(System.in);
@@ -17,8 +16,8 @@ public class ReviewActivity5 {
             userGuess = Integer.parseInt(input.readLine());
         }
 
-        // generate a random integer between 1 and 6
-        int random_int = (int)(Math.random() *6 + 1);
+        //initialize the dise result random_int
+        int random_int = 0;
         
         // bullet proofing 
         while (random_int != userGuess) {
