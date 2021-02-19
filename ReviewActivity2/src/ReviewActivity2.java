@@ -12,7 +12,7 @@ public class ReviewActivity2 {
         System.out.println();
 
         // prompting the user
-
+        // extra feature: units of measurement
         System.out.print("Enter the units of measurement you will be using for all values: ");
         units = input.readLine();
 
