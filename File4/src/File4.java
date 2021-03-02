@@ -27,6 +27,7 @@ public class File4 {
 
             totalPayroll = totalPayroll + grossPay;
         }
+        rF.close();
         System.out.println();
         System.out.println("Total" + "\t" + "\t" + "\t" + totalPayroll);
         //you can format decimals here if you want

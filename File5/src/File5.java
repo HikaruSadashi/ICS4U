@@ -33,6 +33,7 @@ public class File5 {
             System.out.println(average);
             classAvg = classAvg + average;
         }
+        rF.close();
         classAvg = (classAvg/11);
         //decimal format this if I want too.
         System.out.println();
