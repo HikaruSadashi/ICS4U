@@ -1,4 +1,5 @@
 import java.io.*;
+import java.text.*;
 public class File3 {
     public static void main(String[] args) throws IOException {
         String firstName, lastName;
@@ -6,16 +7,16 @@ public class File3 {
         double salary = 0, totalSalary = 0;
 
         BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File3//bedrock.txt"));
+        NumberFormat d = new DecimalFormat ("0.00");
+        
 
         System.out.println("First" + "\t" + "Last" + "\t" + "Age" + "\t" + "Salary");
-        //double tab part of the problem
         System.out.println();
 
         for (int i= 1; i <= 8; i++) {
         
             firstName = rF.readLine();
             lastName = rF.readLine();
-            //some last names dont have a tab after them, and adding 1 more does not help
             age = Integer.parseInt(rF.readLine());
             salary = Double.parseDouble(rF.readLine());
             
@@ -25,6 +26,6 @@ public class File3 {
         }
         rF.close();
         System.out.println();
-        System.out.println("Total" + "\t" + "\t" + "\t" + totalSalary);
+        System.out.println("Total" + "\t" + "\t" + "\t" + d.format(totalSalary));
     }
 }
