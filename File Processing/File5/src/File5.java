@@ -1,4 +1,4 @@
-\import java.io.*;
+import java.io.*;
 import java.text.*;
 public class File5 {
     public static void main(String[] args) throws Exception {
@@ -6,7 +6,7 @@ public class File5 {
         int mathAvg, engAvg, age = 0, grades = 0;
         double average, classAvg = 0.0;
         
-        BufferedReader rF = new BufferedReader (new FileReader("students.txt"));
+        BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File5//students.txt"));
         NumberFormat d = new DecimalFormat ("0.00");
 
         System.out.println("Last" + "\t" + "First" + "\t" + "Math" + "\t" + "English" + "\t" + "Average");

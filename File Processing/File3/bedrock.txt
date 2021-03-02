@@ -1,5 +1,5 @@
 Fred
-Flintstone
+Flint
 47
 23234.12
 Barney
@@ -7,7 +7,7 @@ Rubble
 46
 1123.67
 Wilma
-Flintstone
+Flint
 45
 11235.60
 Betty
@@ -15,7 +15,7 @@ Rubble
 42
 3425.67
 Pebbles
-Flintstone
+Flint
 02
 234.50
 Bam-Bam
@@ -27,6 +27,6 @@ Slate
 55
 100000.00
 Joe
-Rockhead
+RH
 49
 23412.90

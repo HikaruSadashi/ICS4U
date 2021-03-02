@@ -6,7 +6,7 @@ public class File3 {
         int age;
         double salary = 0, totalSalary = 0;
 
-        BufferedReader rF = new BufferedReader (new FileReader("bedrock.txt"));
+        BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File3//bedrock.txt"));
         NumberFormat d = new DecimalFormat ("0.00");
         
 

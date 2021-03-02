@@ -13,7 +13,7 @@ public class File2Program {
             phoneNumber = rF.readLine();
             age = Integer.parseInt(rF.readLine());
             
-            System.out.println(firstName + "\t" + lastName + "\t" + phoneNumber + "\t");
+            System.out.println(firstName + "\t" + lastName + "\t" + phoneNumber + "  " + age);
         }
         rF.close();
     }
