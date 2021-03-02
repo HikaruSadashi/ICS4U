@@ -6,24 +6,26 @@ public class File1 {
 
         DataInputStream input = new DataInputStream(System.in);
         PrintWriter fileOut = new PrintWriter (new FileWriter ("file1.txt"));
+        //same folder in java, but you have to normally have it outside your source program.
 
         for (int i = 1; i <= 5; i++) {
             System.out.print("Enter your last name: ");
             lastName = input.readLine(); //assign input after I prompted the user
-            fileOut.print(lastName + "\t"); //write to the file
             
             System.out.print("Enter first name: "); 
             firstName = input.readLine(); //assign input after I prompted the user
-            fileOut.print(firstName + "\t"); //write to the file
 
             System.out.print("Enter age: ");
             age = Integer.parseInt(input.readLine()); //assign input after I prompted the user
-            fileOut.print(age + "\t"); //write to the file
 
             System.out.print("Enter favourite color: ");
             favColor = input.readLine(); //assign input after I prompted the user
-            fileOut.println(favColor); //write to the file
+            
+            fileOut.println(lastName + "\t" + firstName + "\t" + age + "\t" + favColor);
         }
         fileOut.close();
     }
 }
+//if the length of the name is 
+//flint st and file 4 if 40 hours its 1.5 only on the excess horus
+//decimal formattingh
