@@ -26,6 +26,3 @@ public class File1 {
         fileOut.close();
     }
 }
-//if the length of the name is 
-//flint st and file 4 if 40 hours its 1.5 only on the excess horus
-//decimal formattingh
