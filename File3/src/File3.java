@@ -16,14 +16,11 @@ public class File3 {
             System.out.print(firstName + "\t");
 
             lastName = rF.readLine();
-            System.out.print(lastName + "\t");
             //some last names dont have a tab after them, and adding 1 more does not help
-
             age = Integer.parseInt(rF.readLine());
-            System.out.print(age + "\t");
-
             salary = Double.parseDouble(rF.readLine());
-            System.out.println(salary);
+            
+            System.out.println(firstName + "\t" + lastName + "\t" + age + "\t" + salary); 
 
             totalSalary = totalSalary + salary;
         }
