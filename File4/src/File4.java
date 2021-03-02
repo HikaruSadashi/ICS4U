@@ -5,13 +5,13 @@ public class File4 {
         //lastnames, fisrt names, hours, rate, gross pay, total pay roll
         String lastName, firstName;
         int hours, overTime=0;
-        double rate, grossPay = 0.0, totalPayroll = 0.0;
+        double rate, grossPay = 0.00, totalPayroll = 0.00;
 
-        BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File4//file4.txt"));
-        NumberFormat d = new DecimalFormat ("##,##0.00");
+        BufferedReader rF = new BufferedReader (new FileReader("file4.txt"));
+        NumberFormat d = new DecimalFormat ("0.00");
         //decimal formatting
 
-        System.out.println("Last" + "\t" + "First" + "\t" + "Hours" + "\t" + "Gross Pay");
+        System.out.println("Last" + "\t" + "First" + "\t" + "Hours" + "\t" + "Rate" + "\t" + "Gross Pay");
         System.out.println();
 
         for (int i= 1; i <= 12; i++) {
@@ -23,14 +23,14 @@ public class File4 {
                 overTime = hours - 40;
             }
             rate = Double.parseDouble(rF.readLine());
-            grossPay = (rate*(hours-overTime))+(overTime*(1.5*rate));
+            grossPay = (rate*(hours-overTime))+(overTime*(1.50*rate));
             
-            System.out.println(lastName + "\t" + firstName + "\t" + hours + "\t" + grossPay);
+            System.out.println(lastName + "\t" + firstName + "\t" + hours + "\t" + d.format(rate) + "\t" + d.format(grossPay));
 
             totalPayroll = totalPayroll + grossPay;
         }
         rF.close();
         System.out.println();
-        System.out.println("Total" + "\t" + "\t" + "\t" + totalPayroll);
+        System.out.println("Total Payroll:" + "\t" + "\t" + "\t" + d.format(totalPayroll));
     }
 }
