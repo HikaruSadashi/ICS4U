@@ -1,41 +1,41 @@
 import java.io.*;
+//add decimal formatting library and example
 public class File5 {
     public static void main(String[] args) throws Exception {
         String lastName, firstName, gender;
-        int age = 0, grades = 0;
-        Double mathAvg, engAvg, average, classAvg = 0.0;
+        int mathAvg, engAvg, age = 0, grades = 0;
+        double average, classAvg = 0.0;
         
-        BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File5//students.txt"));
+        BufferedReader rF = new BufferedReader (new FileReader("students.txt"));
 
         System.out.println("Last" + "\t" + "First" + "\t" + "Math" + "\t" + "English" + "\t" + "Average");
         //1 output is not aligned
         System.out.println();
 
         for (int i= 1; i <= 11; i++) {
+        
             lastName = rF.readLine();
-            System.out.print(lastName + "\t");
 
             firstName = rF.readLine();
-            System.out.print(firstName + "\t");
 
             age = Integer.parseInt(rF.readLine());
             gender = rF.readLine();
             grades = Integer.parseInt(rF.readLine());
 
-            mathAvg = Double.parseDouble(rF.readLine());
-            System.out.print(mathAvg + "\t");
+            mathAvg = Integer.parseInt(rF.readLine());
 
-            engAvg = Double.parseDouble(rF.readLine());
-            System.out.print(engAvg + "\t");
+            engAvg = Integer.parseInt(rF.readLine());
 
-            average = ((engAvg + mathAvg)/2);
+            average = ((engAvg + mathAvg)/2.0);
+            //why divide by 2.0 instead?
             //decimal format this to 1 extra if I want
-            System.out.println(average);
             classAvg = classAvg + average;
+            
+            System.out.println(lastName + "\t" + firstName + "\t" + mathAvg + "\t" + engAvg + "\t" + average);
         }
         rF.close();
-        classAvg = (classAvg/11);
-        //decimal format this if I want too.
+        classAvg = (classAvg/11.0);
+        //decimal format this.
         System.out.println();
         System.out.println("Class Avg" + "\t" + "\t" + "\t" + classAvg);
     }
