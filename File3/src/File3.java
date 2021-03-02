@@ -7,14 +7,13 @@ public class File3 {
 
         BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File3//bedrock.txt"));
 
-        System.out.println("First" + "\t" + "Last" + "\t" + "\t" + "Age" + "\t" + "Salary");
+        System.out.println("First" + "\t" + "Last" + "\t" + "Age" + "\t" + "Salary");
         //double tab part of the problem
         System.out.println();
 
         for (int i= 1; i <= 8; i++) {
+        
             firstName = rF.readLine();
-            System.out.print(firstName + "\t");
-
             lastName = rF.readLine();
             //some last names dont have a tab after them, and adding 1 more does not help
             age = Integer.parseInt(rF.readLine());
@@ -26,6 +25,6 @@ public class File3 {
         }
         rF.close();
         System.out.println();
-        System.out.println("Total" + "\t" + "\t" + "\t" + "\t" + totalSalary);
+        System.out.println("Total" + "\t" + "\t" + "\t" + totalSalary);
     }
 }
