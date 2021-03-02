@@ -27,6 +27,7 @@ public class File3 {
 
             totalSalary = totalSalary + salary;
         }
+        rF.close();
         System.out.println();
         System.out.println("Total" + "\t" + "\t" + "\t" + "\t" + totalSalary);
     }
