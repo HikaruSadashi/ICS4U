@@ -6,7 +6,7 @@ public class File3 {
         int age;
         double salary = 0, totalSalary = 0;
 
-        BufferedReader rF = new BufferedReader (new FileReader("c://Users//Khalid Zabalawi//Documents//GitHub//ICS4U//File3//bedrock.txt"));
+        BufferedReader rF = new BufferedReader (new FileReader("bedrock.txt"));
         NumberFormat d = new DecimalFormat ("0.00");
         
 
@@ -20,7 +20,7 @@ public class File3 {
             age = Integer.parseInt(rF.readLine());
             salary = Double.parseDouble(rF.readLine());
             
-            System.out.println(firstName + "\t" + lastName + "\t" + age + "\t" + salary); 
+            System.out.println(firstName + "\t" + lastName + "\t" + age + "\t" + d.format(salary)); 
 
             totalSalary = totalSalary + salary;
         }
